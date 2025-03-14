@@ -1,0 +1,91 @@
+body {
+	background-color: rgb(0, 0, 0);
+}
+.grid-container, .grid-container2, .grid-containerteste {
+	display: grid;
+	grid-template-columns: repeat(26, 200px);
+	grid-gap: 10px;
+}
+.grid-item {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr  );
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 5px;
+	background-color: white;
+	color: black;
+	font-size: 24px;
+	padding: 10px;
+	border-radius: 5%;
+	box-shadow: 0px 5px 15px gray;
+}
+.heart{
+    background-image: url("./images/hearts.png");
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+.club{
+    background-image: url("./images/clubs.png");
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+.diamond{
+    background-image: url("./images/diamonds.png");
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+.spade{
+    background-image: url("./images/spade.webp");
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+.heart, .club, .diamond, .spade {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	align-self: center;
+	justify-self: center;
+}
+.bottomposition{
+    margin-top: 30px;
+}
+.topposition{
+    margin-bottom: 30px;
+}
+.rotate {
+	transform: rotate(180deg);
+}
+.heart-bottom {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url(./images/hearts.png);
+	background-size: cover;
+}
+.diamond-bottom {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url(./images/diamonds.png);
+	background-size: cover;
+}
+.club-bottom {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url(./images/clubs.png);
+	background-size: cover;
+}
+.spade-bottom {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url(./images/spade.webp);
+	background-size: cover;
+}
+.top-left {
+	padding: 0.1em;
+}
+.bottom-right {
+	align-self: end;
+	transform: rotate(180deg);
+}
